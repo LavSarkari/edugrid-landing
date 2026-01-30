@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGrid - Academic Orchestration Platform</title>
+    <meta name="description"
+        content="EduGrid is an advanced academic scheduling engine offering constraint-aware timetable generation and zero-conflict orchestration for institutions.">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind CSS (CDN for standalone usage) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#faf7f2',
+                        foreground: '#0e1b2a',
+                        primary: '#4f46e5',
+                        'primary-dark': '#4338ca',
+                        secondary: '#7c3aed',
+                        muted: '#5b6b7a',
+                        border: '#dde6eb',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col relative">
+
+    <!-- Background Decoration -->
+    <div class="fixed inset-0 z-0 bg-grid-pattern pointer-events-none opacity-60"></div>
+    <div class="fixed inset-0 z-0 bg-gradient-soft pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="relative z-10 w-full pt-6 pb-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- Simple Logo Icon -->
+                <div
+                    class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                    E
+                </div>
+                <span class="text-xl font-bold tracking-tight text-foreground">EduGrid</span>
+            </div>
+            <div>
+                <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/60 border border-indigo-100 text-primary uppercase tracking-wider backdrop-blur-sm">
+                    Coming Soon
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative z-10 flex-grow flex flex-col justify-center pt-12 pb-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+
+            <div class="mb-8 opacity-0 animate-fade-in-up">
+                <span
+                    class="inline-block py-1.5 px-4 rounded-full bg-indigo-50/80 border border-indigo-100/50 text-indigo-700 text-xs font-semibold box-shadow-sm tracking-wide uppercase">
+                    Waitlist Open for 2026 Academic Year
+                </span>
+            </div>
+
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground mb-6 max-w-5xl mx-auto opacity-0 animate-fade-in-up delay-100 leading-[1.15]">
+                Intelligent Scheduling for <br class="hidden sm:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Complex Academic
+                    Ecosystems</span>
+            </h1>
+
+            <p
+                class="text-base sm:text-lg md:text-xl text-muted max-w-3xl mx-auto mb-10 opacity-0 animate-fade-in-up delay-200 leading-relaxed px-4">
+                EduGrid is a constraint-aware orchestration engine that eliminates conflicts and optimizes resource
+                allocation.
+                Built for the rigorous demands of modern higher education institutions.
+            </p>
+
+            <div
+                class="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-up delay-300 w-full max-w-md mx-auto sm:max-w-none">
+                <!-- CTA Button -->
+                <a href="mailto:info@edugrid.in"
+                    class="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-foreground rounded-full overflow-hidden transition-all hover:bg-slate-800 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-foreground">
+                    <span>Contact for Early Access</span>
+                    <svg class="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+                <span class="text-sm text-muted hidden sm:inline-block px-2">or</span>
+                <a href="https://github.com/LavSarkari/EduGrid" target="_blank"
+                    class="w-full sm:w-auto inline-flex items-center justify-center sm:justify-start text-base font-medium text-primary hover:text-primary-dark transition-colors py-3 sm:py-0 border-b-2 border-transparent hover:border-primary/20">
+                    View System Capability
+                </a>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="mt-24 max-w-7xl mx-auto px-6 lg:px-8 opacity-0 animate-fade-in-up delay-400">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                <!-- Feature 1 -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl h-full">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-foreground mb-3">Constraint-Aware Engine</h3>
+                    <p class="text-sm text-muted leading-relaxed">
+                        Deterministic conflict resolution ensures zero-overlap schedules across faculty, rooms, and
+                        student batches effortlessly.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl h-full">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-foreground mb-3">Workload Distribution</h3>
+                    <p class="text-sm text-muted leading-relaxed">
+                        Automated load balancing tracks teaching hours and subjects distribution to maintain
+                        institutional compliance.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl h-full">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 6.253v13M12 6.253c1.168-.776 2.754-1.253 4.5-1.253s3.332.477 4.5 6.253v13c-1.168-.776-2.754-1.253-4.5-1.253s-3.332.477-4.5 6.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-foreground mb-3">Academic Portal</h3>
+                    <p class="text-sm text-muted leading-relaxed">
+                        Unified dashboards for elective selection, attendance tracking, and real-time schedule updates
+                        for students.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-border/50 bg-white/40 backdrop-blur-md">
+        <div
+            class="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+            <div class="text-sm text-muted font-medium">
+                &copy; 2026 EduGrid Systems. All rights reserved.
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                <!-- Contact Email -->
+                <a href="mailto:info@edugrid.in"
+                    class="text-sm font-medium text-muted hover:text-primary transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    info@edugrid.in
+                </a>
+
+                <!-- Trust Badges -->
+                <span
+                    class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-green-50 text-green-700 border border-green-200">
+                    SIH 2025 Finalist
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
