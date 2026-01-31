@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Capability - EduGird</title>
+    <meta name="description"
+        content="EduGird's enterprise-grade capabilities: Constraint-aware orchestration, scalability for complex institutions, and secure academic management.">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind CSS (CDN for standalone usage) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#faf7f2',
+                        foreground: '#0e1b2a',
+                        primary: '#4f46e5',
+                        'primary-dark': '#4338ca',
+                        secondary: '#7c3aed',
+                        muted: '#5b6b7a',
+                        border: '#dde6eb',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-foreground min-h-screen flex flex-col relative">
+
+    <!-- Background Decoration (Fixed) -->
+    <div class="fixed inset-0 z-0 bg-grid-pattern pointer-events-none opacity-60"></div>
+    <div class="fixed inset-0 z-0 bg-gradient-soft pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="relative z-10 w-full pt-6 pb-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <!-- Simple Logo Icon -->
+                <div
+                    class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                    E
+                </div>
+                <span class="text-xl font-bold tracking-tight text-foreground">EduGird</span>
+            </a>
+            <div>
+                <a href="index.html" class="text-sm font-medium text-muted hover:text-primary transition-colors">
+                    &larr; Back to Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="relative z-10 flex-grow pt-12 pb-20">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+
+            <!-- Page Header -->
+            <div class="text-center mb-16 opacity-0 animate-fade-in-up">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-6 leading-tight">
+                    Enterprise-Grade <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Academic
+                        Orchestration</span>
+                </h1>
+                <p class="text-lg text-muted max-w-2xl mx-auto">
+                    EduGird is engineered to handle the complexity of large-scale institutions with precision, security,
+                    and scalability.
+                </p>
+            </div>
+
+            <!-- Capability 1: Orchestration Engine -->
+            <div class="mb-12 opacity-0 animate-fade-in-up delay-100">
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-indigo-500">
+                    <h2 class="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                        Constraint-Aware Orchestration
+                    </h2>
+                    <p class="text-muted leading-relaxed mb-4">
+                        Unlike traditional scheduling tools, EduGird uses a deterministic constraint solver engine. It
+                        ingests thousands of institutional rules—from faculty availability and room capacity to
+                        cross-departmental electives—ensuring a <strong>zero-conflict</strong> schedule every time.
+                    </p>
+                    <ul class="space-y-2 mt-4">
+                        <li class="flex items-start gap-2 text-sm text-foreground">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Hard constraint enforcement (e.g., "No double booking").</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-foreground">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Soft constraint optimization (e.g., "Minimize faculty gaps").</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Capability 2: Scalability -->
+            <div class="mb-12 opacity-0 animate-fade-in-up delay-200">
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-violet-500">
+                    <h2 class="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        Institutional Scalability
+                    </h2>
+                    <p class="text-muted leading-relaxed mb-4">
+                        Built to support the diverse needs of large universities and technical institutes. EduGird's
+                        architecture is designed to manage multi-departmental complexity without performance
+                        degradation.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                        <div class="bg-white/50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-foreground">100+</div>
+                            <div class="text-xs text-muted uppercase tracking-wide">Faculty</div>
+                        </div>
+                        <div class="bg-white/50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-foreground">50+</div>
+                            <div class="text-xs text-muted uppercase tracking-wide">Rooms</div>
+                        </div>
+                        <div class="bg-white/50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-foreground">UnLtd</div>
+                            <div class="text-xs text-muted uppercase tracking-wide">Students</div>
+                        </div>
+                        <div class="bg-white/50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-foreground">99.9%</div>
+                            <div class="text-xs text-muted uppercase tracking-wide">Uptime</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capability 3: Enterprise Security -->
+            <div class="mb-12 opacity-0 animate-fade-in-up delay-300">
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-slate-500">
+                    <h2 class="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        Security & Governance
+                    </h2>
+                    <p class="text-muted leading-relaxed">
+                        Data integrity is paramount. EduGird employs strict <strong>Role-Based Access Control
+                            (RBAC)</strong> to ensure that sensitive scheduling data is only accessible to authorized
+                        administrators, while providing read-only transparency to students and faculty.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="text-center opacity-0 animate-fade-in-up delay-400">
+                <a href="mailto:annoyinglav@gmail.com?subject=EduGird%20Inquiry"
+                    class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-foreground rounded-full hover:bg-slate-800 transition-colors shadow-lg">
+                    Request Comprehensive Demo
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-border/50 bg-white/40 backdrop-blur-md">
+        <div
+            class="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+            <div class="text-sm text-muted font-medium">
+                &copy; 2026 EduGird Systems. All rights reserved.
+            </div>
+
+            <div class="flex items-center gap-4">
+                <span class="text-xs text-muted">System Status: <span
+                        class="text-green-600 font-semibold">Operational</span></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
