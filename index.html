@@ -4,9 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduGird - Academic Orchestration Platform</title>
+    <title>EduGird | Intelligent Academic Scheduling & Timetable Automation</title>
     <meta name="description"
-        content="EduGird is an advanced academic scheduling engine offering constraint-aware timetable generation and zero-conflict orchestration for institutions.">
+        content="EduGird is the intelligent academic scheduling platform for higher education. Automate conflict-free timetables, manage faculty workloads, and optimize institutional resources with our constraint-aware engine.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://edugird.in/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edugird.in/">
+    <meta property="og:title" content="EduGird | Intelligent Academic Scheduling">
+    <meta property="og:description"
+        content="Automate conflict-free timetables and manage faculty workloads with EduGird's constraint-aware scheduling engine.">
+    <meta property="og:image" content="https://edugird.in/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://edugird.in/">
+    <meta property="twitter:title" content="EduGird | Intelligent Academic Scheduling">
+    <meta property="twitter:description"
+        content="Automate conflict-free timetables and manage faculty workloads with EduGird's constraint-aware scheduling engine.">
+    <meta property="twitter:image" content="https://edugird.in/twitter-card.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "EduGird",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/Waitlist"
+      },
+      "description": "EduGird is a constraint-aware orchestration engine for academic scheduling and timetable automation."
+    }
+    </script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
@@ -46,11 +89,14 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <!-- Simple Logo Icon -->
-                <div
-                    class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg shadow-sm">
-                    E
-                </div>
-                <span class="text-xl font-bold tracking-tight text-foreground">EduGird</span>
+                <a href="/" aria-label="EduGird Home"
+                    class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                        E
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-foreground">EduGird</span>
+                </a>
             </div>
             <div>
                 <span
@@ -81,15 +127,17 @@
 
             <p
                 class="text-base sm:text-lg md:text-xl text-muted max-w-3xl mx-auto mb-10 opacity-0 animate-fade-in-up delay-200 leading-relaxed px-4">
-                EduGird is a constraint-aware orchestration engine that eliminates conflicts and optimizes resource
+                EduGird is a <strong>constraint-aware academic scheduling engine</strong> that eliminates conflicts and
+                optimizes resource
                 allocation.
-                Built for the rigorous demands of modern higher education institutions.
+                Built for the rigorous demands of modern higher education timetable automation.
             </p>
 
             <div
                 class="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-up delay-300 w-full max-w-md mx-auto sm:max-w-none">
                 <!-- CTA Button -->
                 <a href="mailto:annoyinglav@gmail.com?subject=Early%20Access%20-%20EduGird"
+                    aria-label="Contact for Early Access"
                     class="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-foreground rounded-full overflow-hidden transition-all hover:bg-slate-800 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-foreground">
                     <span>Contact for Early Access</span>
                     <svg class="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none"
@@ -118,7 +166,7 @@
                                 d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-foreground mb-3">Constraint-Aware Engine</h3>
+                    <h2 class="text-xl font-semibold text-foreground mb-3">Constraint-Aware Engine</h2>
                     <p class="text-sm text-muted leading-relaxed">
                         Deterministic conflict resolution ensures zero-overlap schedules across faculty, rooms, and
                         student batches effortlessly.
@@ -133,7 +181,7 @@
                                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-foreground mb-3">Workload Distribution</h3>
+                    <h2 class="text-xl font-semibold text-foreground mb-3">Workload Distribution</h2>
                     <p class="text-sm text-muted leading-relaxed">
                         Automated load balancing tracks teaching hours and subjects distribution to maintain
                         institutional compliance.
@@ -148,7 +196,7 @@
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 6.253v13M12 6.253c1.168-.776 2.754-1.253 4.5-1.253s3.332.477 4.5 6.253v13c-1.168-.776-2.754-1.253-4.5-1.253s-3.332.477-4.5 6.253" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-foreground mb-3">Academic Portal</h3>
+                    <h2 class="text-xl font-semibold text-foreground mb-3">Academic Portal</h2>
                     <p class="text-sm text-muted leading-relaxed">
                         Unified dashboards for elective selection, attendance tracking, and real-time schedule updates
                         for students.
@@ -192,6 +240,3 @@
 
 
 </html>
-
-
-
